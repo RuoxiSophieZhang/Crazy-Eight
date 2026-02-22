@@ -1,20 +1,47 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Crazy Eights - 8点纸牌
 
-# Run and deploy your AI Studio app
+一个功能完整的经典 8 点 (Crazy Eights) 纸牌游戏，支持 AI 对战和响应式布局。
 
-This contains everything you need to run your app locally.
+## 技术栈
+- **React 19**
+- **Tailwind CSS 4**
+- **Motion** (Framer Motion)
+- **Lucide React** (图标)
+- **Canvas Confetti** (胜利特效)
 
-View your app in AI Studio: https://ai.studio/apps/6de7ab72-304f-4a41-9044-d532693dd4b3
+## 本地开发
 
-## Run Locally
+1. 安装依赖：
+   ```bash
+   npm install
+   ```
 
-**Prerequisites:**  Node.js
+2. 启动开发服务器：
+   ```bash
+   npm run dev
+   ```
 
+## 部署到 Vercel
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+1. **同步到 GitHub**:
+   - 在 GitHub 上创建一个新的仓库。
+   - 在本地初始化 git 并提交代码：
+     ```bash
+     git init
+     git add .
+     git commit -m "Initial commit"
+     git remote add origin <your-github-repo-url>
+     git push -u origin main
+     ```
+
+2. **在 Vercel 上部署**:
+   - 登录 [Vercel](https://vercel.com)。
+   - 点击 "Add New" -> "Project"。
+   - 选择你刚才上传的 GitHub 仓库。
+   - **Framework Preset** 选择 `Vite`。
+   - **Build Command** 保持默认：`npm run build`。
+   - **Output Directory** 保持默认：`dist`。
+   - 点击 "Deploy"。
+
+3. **环境变量**:
+   - 如果你在代码中使用了 Gemini API，请在 Vercel 的项目设置中添加 `GEMINI_API_KEY` 环境变量。
