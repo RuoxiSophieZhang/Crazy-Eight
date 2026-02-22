@@ -1,0 +1,5 @@
+{
+  "name": "Crazy Eights - 8点纸牌",
+  "description": "一个功能完整的经典 8 点 (Crazy Eights) 纸牌游戏，支持 AI 对战和响应式布局。",
+  "requestFramePermissions": []
+}
